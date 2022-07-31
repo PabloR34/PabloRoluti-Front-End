@@ -1,0 +1,8 @@
+.header {background-color: black;
+height: 70px;
+width: 100%;
+}
+
+/* 
+@media (min-width: 370px){
+    *{ width: 700px;}} */

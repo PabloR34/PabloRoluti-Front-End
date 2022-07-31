@@ -1,0 +1,20 @@
+
+ li {background: #171717; 
+   list-style: none;}
+
+ lu {list-style: none;
+background-color: #171717;}
+
+ img { width: 150px;
+display: inline;}
+
+.in-flex  {
+   text-align: center;
+background-color: #171717;
+color: white;}
+.home { background-color: #171717;}
+
+*{ background-color: #171717;
+
+padding: 7px;
+margin: 0px;}

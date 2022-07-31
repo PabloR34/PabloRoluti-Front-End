@@ -1,0 +1,35 @@
+
+   <section class="home">
+    <div class="in-flex"><h1>EDUCACION</h1>
+<br>
+<br>
+        <img src="../../../assets/graduado.png" alt="">
+        <br>
+        <br>
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Nuevo Estudio
+        </button>
+    </div>
+    
+    <div class="in-flex">
+    <li *ngFor="let Educacion of educacion">
+        <td>
+                <h2>{{Educacion.nombreE}}</h2>
+            </td>
+            <br>
+            <td>{{Educacion.descripcionE}}</td> 
+           <br>
+            <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                    <i class="bi bi-pencil-fill"></i></button>
+            </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                    <i class="bi bi-trash-fill"></i></button>
+            </td>
+    </li>  
+  
+    </div>
+    
+    </section>
+                 
